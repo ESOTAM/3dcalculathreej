@@ -28,7 +28,7 @@ theplot1.reDraw();
 
   text=valordey;
     label(valordey);
-  if(valordey="0"){
+  if(valordey=="0"){
   text=="0";}
  
 refreshText();
