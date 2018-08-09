@@ -52,6 +52,22 @@ function limpiar(){
 
 
 
+function ejemplo(){
+var mirando=Math.random() * (4 - 0) + 0;
+  if(mirando<1&&mirando>=0){varst="(cos(pi)+2)^2-(4^(1/2)) +asinh(e)";}
+  if(mirando<3&&mirando>=2){varst="atanh(0.7)+e";}
+  if(mirando<4&&mirando>=3){varst="(e+pi)^(sin(2))";}
+
+
+  document.getElementById("idedietexto").value=varst;
+}
+
+
+
+
+
+
+
 var  fy1=[];
 var fx1=[];
 var contarmas=0;
