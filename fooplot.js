@@ -1,34 +1,3 @@
-/********************************************************************
-Online plotter:   http://fooplot.com/
-Personal website: http://dheera.net/
-
---------------------- DO NOT REMOVE THIS NOTICE ---------------------
-FooPlot embeddable plotter v2.0
-Copyright (C) 2012 Dheera Venkatraman <dheera@dheera.net>
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>
----------------------------------------------------------------------
-
-This code is in BETA; some features are incomplete and the code
-could be written better. If you are only intending to embed a single
-plot into your webpage, it is suggested to use the 'Get Embed Code'
-feature on www.fooplot.com to get an IFRAME-based plotter that is
-hotlinked to the latest version of this code.
-
-********************************************************************/
-
-
 
 
 
@@ -45,7 +14,8 @@ var varst="";
 
 
 function yFunction(){
-  varst=document.getElementById("idedietexto").value;;
+  varst=document.getElementById("idedietexto").value;
+  varst=varst.toLowerCase();
 valorid=0
 abrir=true;
 theplot1=new Fooplot(document.getElementById('container'));
@@ -54,15 +24,31 @@ theplot1.addPlot(String(varst),FOOPLOT_TYPE_FUNCTION);
 theplot1.reDraw();
 //theplot.addPlot('3^2',1);
 
- 
+ alert(valordey);
 
   text=valordey;
+    label(valordey);
+  if(valordey="0"){
+  text=="0";}
+ 
 refreshText();
+
 }
 
 
 
+function label(st1){
 
+  document.getElementById("idescri").innerHTML="result "+ st1;
+}
+
+
+function limpiar(){
+
+  document.getElementById("idedietexto").value="";
+  text="";
+  refreshText();
+}
 
 
 
