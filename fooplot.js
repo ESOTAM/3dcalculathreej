@@ -24,7 +24,7 @@ theplot1.addPlot(String(varst),FOOPLOT_TYPE_FUNCTION);
 theplot1.reDraw();
 //theplot.addPlot('3^2',1);
 
- alert(valordey);
+
 
   text=valordey;
     label(valordey);
@@ -53,10 +53,13 @@ function limpiar(){
 
 
 function ejemplo(){
-var mirando=Math.random() * (4 - 0) + 0;
+var mirando=Math.random() * (7- 0) + 0;
   if(mirando<1&&mirando>=0){varst="(cos(pi)+2)^2-(4^(1/2)) +asinh(e)";}
   if(mirando<3&&mirando>=2){varst="atanh(0.7)+e";}
   if(mirando<4&&mirando>=3){varst="(e+pi)^(sin(2))";}
+  if(mirando<5&&mirando>=4){varst="(9)^(1/2)";}
+  if(mirando<6&&mirando>=5){varst="(125)^(1/3)";}
+  if(mirando<7&&mirando>=6){varst="(1/2+4/5)-(2/3*7)";}
 
 
   document.getElementById("idedietexto").value=varst;
